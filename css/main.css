@@ -1,0 +1,365 @@
+html {
+  scroll-behavior: smooth;
+}
+.header-container {
+  /*height: ;*/
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  background: #0f0f0fde /*#44444470*/;
+}
+
+/*
+   * Header
+   */
+
+.logo-brand,
+.logo-brand h3,
+.logo-brand p {
+  margin-bottom: 0;
+  text-align: center;
+  color: #ffffff;
+  font-family: oswald;
+}
+.logo-brand img {
+  width: 250px;
+  height: 250px;
+}
+.logo-brand h3 {
+  color: #ffffff;
+}
+.brand-name {
+  /*display: flex;
+  flex-direction: column;
+  align-content: center;
+  display: flex;*/
+  padding-top: 30px;
+  padding-left: 15px;
+}
+.brand-name h3 {
+  color: #ffffff;
+  font-family: oswald;
+  /*display: inline;*/
+}
+.brand-name p {
+  color: #ffffff;
+  /*display: inline;*/
+}
+.top-menu {
+  float: right;
+  margin-top: -70px /*77px*/;
+  margin-right: 30px;
+  font-family: oswald;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.top-menu .nav-link {
+  padding: 0.25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border-bottom: 0.25rem solid transparent;
+}
+
+.top-menu .nav-link:hover,
+.top-menu .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+
+.top-menu .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.top-menu .active {
+  color: #255;
+  border-bottom-color: #255;
+}
+
+.shrink {
+  width: 80px;
+  height: 80px;
+}
+/************  SECTIONS *************/
+
+main {
+  overflow: hidden;
+}
+/********** About Section ***********/
+
+.section-about {
+  background: #ffffff; /*url(/img/chinese_dragon__grey.png) no-repeat */
+  padding: 60px 0 60px 0;
+}
+.about-info {
+  background: #c2b0a1;
+}
+
+/********** Classes Section ***********/
+/*
+.section-classes {
+  background: #800000; /*#565247 , #225555a3*/
+/*padding: 60px 0 100px 0;
+  overflow: hidden;
+}*/
+/* Classes section red with dragon bg*/
+.section-classes {
+  background: #fff url(../img/chinese_dragon__black-big.jpg);
+  overflow: hidden;
+}
+
+.red-bg {
+  background: #340300f0; /* deep red #800000f0;*/
+  padding: 80px 20px 180px;
+}
+.container-classes {
+  max-width: 1260px; /*960px*/
+  margin: 0 auto;
+}
+.card {
+  border: none;
+  border-radius: 0;
+}
+.card img {
+  height: 300px; /*200px*/
+  object-fit: cover;
+}
+.card-img-top {
+  border-radius: 0;
+}
+
+/********** Bookings Section ***********/
+.section-bookings {
+  background: #225555a3; /*#255*/
+  padding: 60px 0 60px 0;
+}
+.jumbotron {
+  background-color: #121212;
+  border-radius: 0;
+  margin-bottom: 0;
+  padding: 150px 0;
+}
+.jumbotron-heading {
+  color: #b1762b;
+  font-family: "Oswald", sans-serif;
+  line-height: 1.34em;
+  font-size: 60px;
+}
+
+/********** Feedback Section ***********/
+.section-feedback {
+  background: #ffffff url(../img/chinese_dragon__black-big.jpg) no-repeat right;
+  /*padding: 130px 0 130px 0;
+  transform:;*/
+}
+
+.feedback {
+  background: #340300f0; /* #800000f0 */
+  padding: 50px;
+  color: #e1e1e1;
+  padding: 130px 0 130px 0;
+}
+
+/******* Contact section **********/
+
+.section-maps {
+  background: #e1e1e1; /*#225555a3*/ /*#565247*/
+  padding: 60px 0 25px 0;
+}
+.container-maps {
+  width: 98%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.maps-block {
+  padding: 20px;
+  /*height: 673px;*/
+  background: #b31e1e;
+}
+.maps-block-inner > img {
+  min-height: 800px;
+  object-fit: cover;
+}
+
+/**********Form ***********/
+
+.form-block {
+  background: #e1e1e1;
+  display: flex;
+  align-items: center;
+}
+.form-inner {
+  padding: 50px;
+}
+.contact-form {
+  margin: 0;
+}
+/*
+.back-to-top {
+}*/
+.back-to-top img {
+  width: 150px;
+  height: 50px;
+  position: fixed;
+  right: 10px;
+  bottom: 0px;
+}
+.address-card {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 60px;
+}
+
+/********* Footer *********/
+
+.section-footer {
+  background: #121212; /*#0f0f0fde*/ /*#255*/
+  padding: 60px 0 20px 0;
+}
+.section-footer p {
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+.section-footer a {
+  color: #df4040;
+}
+/*.section-footer a:hover {
+  color: ;
+}*/
+
+/******* Buttons ********/
+.btn {
+  border-radius: 0;
+}
+.btn-lg {
+  border-radius: 0;
+}
+.btn-danger {
+  background-color: #255;
+  border-color: #255;
+  color: #fff; /*#800*/
+  font-weight: 600;
+}
+.btn-danger:hover {
+  background-color: #800000aa;
+  border-color: #800000;
+}
+.red-btn {
+  color: #b31e1e;
+  border: 5px solid #b31e1e;
+  padding: 10px 40px;
+}
+.red-btn:hover {
+  border: 5px solid #b31e1e;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 40px;
+  height: 40px;
+}
+
+/********* Text ********/
+
+.red-text {
+  color: #800000;
+}
+.light-red-text {
+  color: #b03229;
+}
+.white-text {
+  color: #ffffff;
+}
+.carousel-h1 {
+  font-size: 6.5rem;
+  font-weight: 600;
+  font-family: oswald;
+}
+.section-header {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 70px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.font_5 {
+  font-family: "Oswald", sans-serif;
+  line-height: 1.34em;
+}
+h2.contact-heading {
+  font-size: 1.6rem;
+  padding-bottom: 20px;
+}
+
+/******** Media queries **********/
+
+@media (min-width: 1200px /*48em*/) {
+  .logo-brand {
+    float: left;
+  }
+  .top-menu {
+    float: right;
+  }
+  .logo-brand img {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media (max-width: 1399px) {
+  /*.carousel-caption {
+  }*/
+  .carousel-h1 {
+    font-size: 5.5rem;
+  }
+}
+@media (max-width: 1199px) {
+  .logo-brand img {
+    width: 150px;
+    height: 150px;
+  }
+  .brand-name {
+    text-align: center;
+    padding-top: 0;
+  }
+  .top-menu {
+    float: none;
+    margin-top: 0;
+    margin-right: 0;
+  }
+  .carousel-item > img {
+    /*width: 100%;*/
+    margin-top: 270px;
+  }
+  .carousel-h1 {
+    font-size: 4.5rem;
+  }
+}
+@media (max-width: 992px) {
+  .carousel-h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 392px) {
+  .carousel-item > img {
+    margin-top: 334px;
+  }
+}
+@media (max-width: 451px) {
+  .carousel-item > img {
+    margin-top: 294px;
+  }
+}
+@media (min-width: 1650px) {
+  .carousel-item > img {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .section-classes {
+    padding-bottom: 0;
+  }
+  .carousel-caption {
+    display: none;
+  }
+}
