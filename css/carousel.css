@@ -99,24 +99,24 @@ body {
 
 @media (min-width: 300px) {
   .carousel-item {
-    height: 30rem;
+    height: 100vh;
     object-fit: cover;
   }
 }
 @media (min-width: 500px) {
   .carousel-item {
-    height: 34rem;
+    height: 100vh;
     object-fit: cover;
   }
 }
 @media (min-width: 768px) {
   .carousel-item {
-    height: 68vh;
+    height: 86vh; /*68*/
   }
 }
 @media (min-width: 992px) {
   .carousel-item {
-    height: 77vh;
+    height: 90vh; /*77*/
   }
 }
 @media (min-width: 1200px) {

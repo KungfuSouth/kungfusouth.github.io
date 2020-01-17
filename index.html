@@ -69,10 +69,20 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              class="first-slide"
+              class="first-slide hidden-xs visible-sm-block "
               src="img/karate-hero-img2.jpg"
               alt="First slide"
             />
+            <img
+              class="tablet-hero-img first-slide visible-xs-block hidden-md hidden-lg"
+              src="img/karate-hero-img-800.jpg"
+              alt="First slide"
+            />
+            <img
+            class="mobile-hero-img first-slide visible-xs-block hidden-md hidden-lg"
+            src="img/karate-hero-img-mobile.jpg"
+            alt="First slide"
+          />
             <div class="container">
               <div class="carousel-caption text-right">
                 <h1 class="red-text carousel-h1">Learn Kungfu</h1>
@@ -474,7 +484,7 @@
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Placed at the end of the document so the pages load faster 
     <script src="/js/main.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -495,6 +505,6 @@
           $("logo-brand img").removeClass("shrink");
         }
       });
-    </script>
+    </script>-->
   </body>
 </html>

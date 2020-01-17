@@ -342,17 +342,40 @@ h2.contact-heading {
 }
 @media (max-width: 392px) {
   .carousel-item > img {
-    margin-top: 334px;
+    margin-top: 160px;
   }
 }
 @media (max-width: 451px) {
   .carousel-item > img {
-    margin-top: 294px;
+    margin-top: 100px;
+  }
+  .logo-brand img {
+    width: 65px;
+    height: 65px;
+  }
+  .brand-name h3 {
+    font-size: 1.4rem;
+  }
+  .brand-name p {
+    display: none;
+  }
+  .top-menu {
+    font-size: 17px;
+  }
+}
+@media (min-width: 452px) {
+  .carousel-item > img.mobile-hero-img {
+    display: none;
   }
 }
 @media (min-width: 1650px) {
   .carousel-item > img {
     width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .carousel-item > img.tablet-hero-img {
+    display: none;
   }
 }
 @media (max-width: 767px) {
