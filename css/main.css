@@ -150,11 +150,15 @@ main {
 .card-img-top {
   border-radius: 0;
 }
+.card-classes {
+  margin: 10px 0;
+}
 
 /********** Bookings Section ***********/
 .section-bookings {
   background: #225555a3; /*#255*/
   padding: 60px 0 60px 0;
+  overflow: hidden;
 }
 .jumbotron {
   background-color: #121212;
@@ -452,6 +456,7 @@ h2.contact-heading {
   }
   .top-menu {
     font-size: 17px;
+    padding: 10px 0 0;
   }
   .carousel-h1 {
     font-size: 3.5rem;
@@ -466,18 +471,7 @@ h2.contact-heading {
     width: 50px;
   }
 }
-@media (max-width: 451px) {
-  .carousel-item > img {
-    margin-top: 82px;
-  }
-  .logo-brand img {
-    width: 75px;
-    height: 75px;
-  }
-  .brand-name p {
-    display: none;
-  }
-}
+
 @media (min-width: 452px) {
   .carousel-item > img.mobile-hero-img {
     display: none;
@@ -516,6 +510,26 @@ h2.contact-heading {
   }
   .map-wrapper {
     margin: 20px 0;
+    border: none;
+  }
+  .section-maps-2 .row .col-xl-6 {
+    padding: 20px 0;
+  }
+}
+@media (max-width: 451px) {
+  .carousel-item > img {
+    margin-top: 82px;
+  }
+  .logo-brand img {
+    width: 75px;
+    height: 75px;
+  }
+  .brand-name {
+    max-width: 45%;
+    padding-right: 0px;
+  }
+  .brand-name p {
+    display: none;
   }
 }
 
