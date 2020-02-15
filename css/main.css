@@ -1,12 +1,26 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  overflow-x: hidden;
+  background: #000000;
+}
 .header-container {
   /*height: ;*/
   position: fixed;
   z-index: 1000;
   width: 100%;
   background: #0f0f0fde /*#44444470*/;
+}
+
+.offset::before {
+  height: 137.8px;
+  margin-top: -137.8px;
+  content: "";
+  display: block;
+}
+.bg-black {
+  background: #0f0f0fde;
 }
 
 /*
@@ -19,11 +33,12 @@ html {
   margin-bottom: 0;
   text-align: center;
   color: #ffffff;
-  font-family: oswald;
+  font-family: "Oswald", sans-serif;
 }
 .logo-brand img {
-  width: 250px;
-  height: 250px;
+  width: 130px;
+  height: 130px;
+  margin: -7%;
 }
 .logo-brand h3 {
   color: #ffffff;
@@ -33,22 +48,21 @@ html {
   flex-direction: column;
   align-content: center;
   display: flex;*/
-  padding-top: 30px;
-  padding-left: 15px;
+  padding-top: 0;
+  padding-left: 0;
 }
 .brand-name h3 {
   color: #ffffff;
-  font-family: oswald;
+  font-family: "Oswald", sans-serif;
+  margin: 0;
   /*display: inline;*/
 }
 .brand-name p {
   color: #ffffff;
+  margin: 0;
   /*display: inline;*/
 }
 .top-menu {
-  float: right;
-  margin-top: -70px /*77px*/;
-  margin-right: 30px;
   font-family: oswald;
   font-size: 18px;
   text-transform: uppercase;
@@ -76,10 +90,19 @@ html {
   border-bottom-color: #255;
 }
 
-.shrink {
+.logo-brand > img .resize {
   width: 80px;
   height: 80px;
 }
+
+/*
+.shrink { ////option 2 js.main
+.logo-brand > img.shrink {
+  width: 80px;
+  height: 80px;
+}
+*/
+
 /************  SECTIONS *************/
 
 main {
@@ -145,6 +168,14 @@ main {
   line-height: 1.34em;
   font-size: 60px;
 }
+.jumbotron .fa {
+  color: ;
+  font-size: 2.2rem;
+  margin: 1.2rem 0.5rem 0 0;
+}
+.jumbotron .fa:hover {
+  color: #ffc107;
+}
 
 /********** Feedback Section ***********/
 .section-feedback {
@@ -183,22 +214,69 @@ main {
   object-fit: cover;
 }
 
+.section-maps-2 {
+  background: #e1e1e1;
+  padding: 60px 20px 25px;
+}
+
+/*
+  =====================================
+  CSS for <iframe> embedded Google Map
+  =====================================
+*/
+.map-wrapper {
+  position: relative;
+  /*
+    Do math with the height of your iframe divided by the width, then converted to percent
+    In this example the height is 400 and the width is 600
+    400 / 600 = .66666667
+    which is 66.6666667% */
+
+  /* I'm choosing 79% to match the height to the right div */
+  padding-bottom: 79.4%;
+  height: 0;
+  border: 1px solid #800000;
+  margin-bottom: 20px;
+}
+.map-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* This sets an overlay element that covers the map and helps prevent people from zooming the map while scrolling. */
+.overlay {
+  background: transparent;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
 /**********Form ***********/
 
 .form-block {
   background: #e1e1e1;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .form-inner {
-  padding: 50px;
+  padding: 0 10%; /*50px*/
 }
 .contact-form {
   margin: 0;
 }
-/*
+
 .back-to-top {
-}*/
+  width: 150px;
+  height: 40px;
+  position: fixed;
+  right: 30px;
+  bottom: 0px;
+}
 .back-to-top img {
   width: 150px;
   height: 50px;
@@ -206,10 +284,13 @@ main {
   right: 10px;
   bottom: 0px;
 }
+.card-grey {
+  background-color: #e1e1e1;
+}
 .address-card {
   background: #fff;
-  padding: 20px;
-  margin-bottom: 60px;
+  padding: 20px 0 0;
+  margin-bottom: 45px;
 }
 
 /********* Footer *********/
@@ -225,9 +306,21 @@ main {
 .section-footer a {
   color: #df4040;
 }
+footer .fa {
+  color: #9b8787;
+  font-size: 2.2rem;
+  margin: 1.2rem 0.5rem 0 0;
+}
+footer .fa:hover {
+  color: #df4040;
+}
 /*.section-footer a:hover {
   color: ;
 }*/
+hr.socket {
+  border-top: 0.2rem solid #000000;
+  width: 100%;
+}
 
 /******* Buttons ********/
 .btn {
@@ -288,8 +381,11 @@ main {
   line-height: 1.34em;
 }
 h2.contact-heading {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   padding-bottom: 20px;
+}
+.lead {
+  font-size: 1rem;
 }
 
 /******** Media queries **********/
@@ -301,9 +397,11 @@ h2.contact-heading {
   .top-menu {
     float: right;
   }
-  .logo-brand img {
-    width: 120px;
-    height: 120px;
+  .carousel-item > img.tablet-hero-img {
+    display: none;
+  }
+  .carousel-item > img.mobile-hero-img {
+    display: none;
   }
 }
 @media (max-width: 1399px) {
@@ -314,13 +412,10 @@ h2.contact-heading {
   }
 }
 @media (max-width: 1199px) {
-  .logo-brand img {
-    width: 150px;
-    height: 150px;
-  }
   .brand-name {
     text-align: center;
     padding-top: 0;
+    padding-right: 30px;
   }
   .top-menu {
     float: none;
@@ -329,38 +424,57 @@ h2.contact-heading {
   }
   .carousel-item > img {
     /*width: 100%;*/
-    margin-top: 270px;
+    margin-top: 98px;
+    height: 100%;
   }
   .carousel-h1 {
     font-size: 4.5rem;
   }
-}
-@media (max-width: 992px) {
-  .carousel-h1 {
-    font-size: 3.5rem;
+  .map-wrapper {
+    margin: 20px 15%;
+  }
+  .back-to-top img {
+    width: 100px;
+  }
+  .back-to-top {
+    display: none;
   }
 }
-@media (max-width: 392px) {
-  .carousel-item > img {
-    margin-top: 160px;
-  }
-}
-@media (max-width: 451px) {
-  .carousel-item > img {
-    margin-top: 100px;
-  }
+@media (max-width: 991px) {
   .logo-brand img {
-    width: 65px;
-    height: 65px;
+    width: 90px;
+    height: 90px;
+    margin: -9px;
   }
   .brand-name h3 {
     font-size: 1.4rem;
   }
-  .brand-name p {
-    display: none;
-  }
   .top-menu {
     font-size: 17px;
+  }
+  .carousel-h1 {
+    font-size: 3.5rem;
+  }
+  .marketing .col-lg-4 {
+    padding: 0 20%;
+  }
+  .map-wrapper {
+    margin: 20px 5%;
+  }
+  .back-to-top img {
+    width: 50px;
+  }
+}
+@media (max-width: 451px) {
+  .carousel-item > img {
+    margin-top: 82px;
+  }
+  .logo-brand img {
+    width: 75px;
+    height: 75px;
+  }
+  .brand-name p {
+    display: none;
   }
 }
 @media (min-width: 452px) {
@@ -379,10 +493,44 @@ h2.contact-heading {
   }
 }
 @media (max-width: 767px) {
+  .brand-name {
+    max-width: 65%;
+  }
+  .brand-name p {
+    font-size: 14px;
+    line-height: normal;
+    margin-top: 2px;
+  }
   .section-classes {
     padding-bottom: 0;
   }
   .carousel-caption {
+    left: 20%;
+  }
+  .main-hero-img {
     display: none;
   }
+  .carousel-item > img.dragon-hero-img-bg {
+    display: none;
+  }
+  .map-wrapper {
+    margin: 20px 0;
+  }
 }
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
