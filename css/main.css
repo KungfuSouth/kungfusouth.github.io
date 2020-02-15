@@ -182,6 +182,7 @@ main {
   background: #ffffff url(../img/chinese_dragon__black-big.jpg) no-repeat right;
   /*padding: 130px 0 130px 0;
   transform:;*/
+  overflow: hidden;
 }
 
 .feedback {
