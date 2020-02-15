@@ -169,16 +169,31 @@ main {
 .jumbotron-heading {
   color: #b1762b;
   font-family: "Oswald", sans-serif;
-  line-height: 1.34em;
+  line-height: 2.34em;
   font-size: 60px;
 }
 .jumbotron .fa {
-  color: ;
+  color: #9b8787;
   font-size: 2.2rem;
   margin: 1.2rem 0.5rem 0 0;
 }
+.jumbotron .fa-facebook-square:hover {
+  color: #1877f2;
+}
+.jumbotron .fa-twitter-square:hover {
+  color: #1da1f2;
+}
+.jumbotron .fa-instagram:hover {
+  color: #c32aa3;
+}
+.jumbotron .fa-youtube:hover {
+  color: #ff0000;25d366
+}
+.jumbotron .fa-whatsapp:hover {
+  color: #25d366;
+}
 .jumbotron .fa:hover {
-  color: #ffc107;
+  color: ; /*#df4040; yellow #ffc107*/
 }
 
 /********** Feedback Section ***********/
@@ -390,7 +405,7 @@ h2.contact-heading {
   padding-bottom: 20px;
 }
 .lead {
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 /******** Media queries **********/
@@ -476,6 +491,9 @@ h2.contact-heading {
   .carousel-item > img.mobile-hero-img {
     display: none;
   }
+  .carousel-item > img.second-hero-img {
+    margin-top: 100px;
+  }
 }
 @media (min-width: 1650px) {
   .carousel-item > img {
@@ -488,6 +506,9 @@ h2.contact-heading {
   }
 }
 @media (max-width: 767px) {
+  .carousel-caption p {
+    font-size: 1rem;
+  }
   .brand-name {
     max-width: 65%;
   }
@@ -519,6 +540,13 @@ h2.contact-heading {
 @media (max-width: 451px) {
   .carousel-item > img {
     margin-top: 82px;
+  }
+  .carousel-caption {
+    left: 15%;
+    bottom: 21%;
+  }
+  .carousel-h1 {
+    font-size: 2.5rem;
   }
   .logo-brand img {
     width: 75px;
