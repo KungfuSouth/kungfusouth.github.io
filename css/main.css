@@ -169,8 +169,9 @@ main {
 .jumbotron-heading {
   color: #b1762b;
   font-family: "Oswald", sans-serif;
-  line-height: 2.34em;
+  line-height: 1.34em;
   font-size: 60px;
+  margin-bottom: 2rem;
 }
 .jumbotron .fa {
   color: #9b8787;
@@ -353,7 +354,7 @@ hr.socket {
   background-color: #255;
   border-color: #255;
   color: #fff; /*#800*/
-  font-weight: 600;
+  font-weight: 500;
 }
 .btn-danger:hover {
   background-color: #800000aa;
@@ -528,6 +529,9 @@ h2.contact-heading {
   }
   .carousel-item > img.dragon-hero-img-bg {
     display: none;
+  }
+  .jumbotron-heading {
+    font-size: 44px;
   }
   .map-wrapper {
     margin: 20px 0;
