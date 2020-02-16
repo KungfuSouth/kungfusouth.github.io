@@ -3,7 +3,7 @@ html {
 }
 body {
   overflow-x: hidden;
-  background: #000000;
+  background: #ffffff;
 }
 .header-container {
   /*height: ;*/
@@ -112,10 +112,13 @@ main {
 
 .section-about {
   background: #ffffff; /*url(/img/chinese_dragon__grey.png) no-repeat */
-  padding: 60px 0 60px 0;
+  padding: ;
+  padding-bottom: 100px;
 }
 .about-info {
   background: #c2b0a1;
+  padding: 20px 20px 0;
+  margin-bottom: 15px;
 }
 
 /********** Classes Section ***********/
@@ -133,7 +136,7 @@ main {
 
 .red-bg {
   background: #340300f0; /* deep red #800000f0;*/
-  padding: 80px 20px 180px;
+  padding: 20px 20px 180px;
 }
 .container-classes {
   max-width: 1260px; /*960px*/
@@ -160,8 +163,11 @@ main {
   padding: 60px 0 60px 0;
   overflow: hidden;
 }
+.black-bg {
+  background: #121212;
+}
 .jumbotron {
-  background-color: #121212;
+  background-color: ; /*#2d271f;  #121212*/
   border-radius: 0;
   margin-bottom: 0;
   padding: 150px 0;
@@ -173,25 +179,49 @@ main {
   font-size: 60px;
   margin-bottom: 2rem;
 }
-.jumbotron .fa {
+.jumbotron .black-bg .fa {
   color: #9b8787;
   font-size: 2.2rem;
   margin: 1.2rem 0.5rem 0 0;
 }
-.jumbotron .fa-facebook-square:hover {
+.jumbotron .fa {
+  color: #9b8787;
+  /*
+  font-size: 2.2rem;
+  margin: 1.2rem 0.5rem 0 0;
+  */
+  font-size: 3.2rem;
+  margin: 2.2rem 0rem 0 1rem; /*2.2rem 1rem 0 1rem;*/
+}
+.jumbotron .fa-facebook-square {
   color: #1877f2;
 }
-.jumbotron .fa-twitter-square:hover {
+.jumbotron .fa-twitter-square {
   color: #1da1f2;
 }
-.jumbotron .fa-instagram:hover {
+.jumbotron .fa-instagram {
   color: #c32aa3;
 }
+.jumbotron .fa-youtube {
+  color: #ff0000; /*25d366*/
+}
+.jumbotron .fa-whatsapp {
+  color: #25d366;
+}
+.jumbotron .fa-facebook-square:hover {
+  color: #1877f2ce;
+}
+.jumbotron .fa-twitter-square:hover {
+  color: #1da1f2ce;
+}
+.jumbotron .fa-instagram:hover {
+  color: #c32aa3ce;
+}
 .jumbotron .fa-youtube:hover {
-  color: #ff0000;25d366
+  color: #ff0000ce; /*25d366*/
 }
 .jumbotron .fa-whatsapp:hover {
-  color: #25d366;
+  color: #25d366ce;
 }
 .jumbotron .fa:hover {
   color: ; /*#df4040; yellow #ffc107*/
@@ -209,7 +239,7 @@ main {
   background: #340300f0; /* #800000f0 */
   padding: 50px;
   color: #e1e1e1;
-  padding: 130px 0 130px 0;
+  padding: 80px 0 110px 0;
 }
 
 /******* Contact section **********/
@@ -237,7 +267,7 @@ main {
 
 .section-maps-2 {
   background: #e1e1e1;
-  padding: 60px 20px 25px;
+  padding: 60px 20px 80px;
 }
 
 /*
@@ -392,7 +422,7 @@ hr.socket {
 }
 .section-header {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 65px;
   margin-bottom: 70px;
   text-transform: uppercase;
   font-weight: 600;
