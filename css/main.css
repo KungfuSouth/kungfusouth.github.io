@@ -116,11 +116,16 @@ main {
   padding-bottom: 100px;
 }
 .about-info {
-  background: #c2b0a1;
+  background: #d2966426; /* #c2b0a1*/
   padding: 20px 20px 0;
   margin-bottom: 15px;
 }
-
+.box-lead {
+  border: 1px solid #ced4da;
+  background: #fff;
+  padding: 3rem;
+  border-radius: 0.25rem;
+}
 /********** Classes Section ***********/
 /*
 .section-classes {
@@ -135,7 +140,7 @@ main {
 }
 
 .red-bg {
-  background: #340300f0; /* deep red #800000f0;*/
+  background: #420401de; /*maroon #340300f0 deep red #800000f0;*/
   padding: 20px 20px 180px;
 }
 .container-classes {
@@ -147,7 +152,7 @@ main {
   border-radius: 0;
 }
 .card img {
-  height: 300px; /*200px*/
+  height: 400px; /*200px*/
   object-fit: cover;
 }
 .card-img-top {
@@ -190,9 +195,15 @@ main {
   font-size: 2.2rem;
   margin: 1.2rem 0.5rem 0 0;
   */
-  font-size: 3.2rem;
+  font-size: 2.6rem;
   margin: 2.2rem 0rem 0 1rem; /*2.2rem 1rem 0 1rem;*/
   /*text-shadow: 0px 0px 5px #fff;*/
+}
+.fa-email {
+  font-size: 2rem !important;
+  margin: 0.5rem 1rem 0.5rem 0 !important;
+  vertical-align: middle;
+  color: white !important;
 }
 .jumbotron .fa-facebook-square {
   color: #1877f2;
@@ -237,7 +248,7 @@ main {
 }
 
 .feedback {
-  background: #340300f0; /* #800000f0 */
+  background: #420401de 0; /*#340300f , #800000f0 */
   padding: 50px;
   color: #e1e1e1;
   padding: 80px 0 110px 0;
@@ -267,7 +278,7 @@ main {
 }
 
 .section-maps-2 {
-  background: #e1e1e1;
+  background: #ffffff; /* #e1e1e1*/
   padding: 60px 20px 80px;
 }
 
@@ -287,7 +298,7 @@ main {
   /* I'm choosing 79% to match the height to the right div */
   padding-bottom: 79.4%;
   height: 0;
-  border: 1px solid #800000;
+  /*border: 1px solid #800000;*/
   margin-bottom: 20px;
 }
 .map-wrapper iframe {
@@ -310,7 +321,7 @@ main {
 /**********Form ***********/
 
 .form-block {
-  background: #e1e1e1;
+  background: #ffffff; /* #e1e1e1*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -343,6 +354,8 @@ main {
   background: #fff;
   padding: 20px 0 0;
   margin-bottom: 45px;
+  border: 1px solid gray;
+  border-radius: 0.25rem;
 }
 
 /********* Footer *********/
@@ -392,12 +405,9 @@ hr.socket {
   border-color: #800000;
 }
 .red-btn {
-  color: #b31e1e;
-  border: 5px solid #b31e1e;
   padding: 10px 40px;
 }
 .red-btn:hover {
-  border: 5px solid #b31e1e;
 }
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
@@ -509,7 +519,7 @@ h2.contact-heading {
     font-size: 3.5rem;
   }
   .marketing .col-lg-4 {
-    padding: 0 20%;
+    padding: 0 25%; /* Previous 0 20% */
   }
   .map-wrapper {
     margin: 20px 5%;
