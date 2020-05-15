@@ -506,7 +506,7 @@ main {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
-  margin-bottom: 20px;
+  margin-bottom: 70px;
 }
 .grid-video iframe {
 
@@ -904,9 +904,9 @@ h2.contact-heading {
   }
   .grid-video {
     position: relative;
-    padding-bottom: 80.25%;
+    padding-bottom: 56.25%;
     height: 0;
-    margin-bottom: 75px;
+    margin-bottom: 140px;
   }
   .offset::before {
     height: 65px;
