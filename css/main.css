@@ -33,6 +33,14 @@ body {
 .bg-black {
   background: #000; /*#0f0f0fde*/
 }
+.img-fluid {
+  transition: transform 2s;
+  transform: scale(1);
+} 
+.lazy {
+  transition: ease 1.5s;
+  transform: translate(10px);
+}
 
 /**--------------
    *  Header
@@ -638,10 +646,7 @@ h2.contact-heading {
 .lead {
   font-size: 1.3rem;
 }
-.lazy {
-  transition: ease 1.5s;
-  transform: translate(10px);
-}
+
 
 /******** Media queries **********/
 
