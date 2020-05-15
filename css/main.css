@@ -11,8 +11,11 @@ body {
   overflow-x: hidden;
   background: #ffffff;
   padding-top: 0;
+  font-size: 1.2rem;
 }
-
+.center-align {
+  margin: 0 auto;
+}
 .header-container {
   /*height: ;*/
   position: fixed;
@@ -72,6 +75,7 @@ body {
 .brand-name p {
   color: #ffffff;
   margin: 0;
+  font-size: 1rem;
   /*display: inline;*/
 }
 .top-menu {
@@ -174,7 +178,8 @@ body {
   margin-top: 3.5vw;
 }
 .second-hero-img.second-slide {
-  margin-top: 120px;
+  margin-top: 8vw;
+  /* margin-top: 120px; */
 }
 
 /* MARKETING CONTENT
@@ -240,6 +245,51 @@ main {
   padding: 3rem;
   border-radius: 0.25rem;
 }
+/********** Info Section ***************/
+
+.section-info .row.featurette .col-lg-6,
+.section-info .row.featurette .col-12 {
+  padding: 2em;
+  text-align: center;
+}
+.section-info .row.featurette div img {
+  width: 100%;
+  padding: 0.2rem 0 2rem;
+}
+.section-info .col-lg-6.info-left p,
+.section-info .col-lg-6.info-right p {
+  text-align: justify;
+}
+
+
+/********** Video Section ***************/
+
+.section-video .row.featurette .col-12 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.section-video .row.featurette div iframe {
+  width: 100%;
+  padding: 0.2rem 0;
+  object-fit: contain;
+}
+.col-12.info-video {
+  padding: 2em 0 !important;
+}
+
+.section-video .col-12.info-video .grid-item {
+  display: inline-block;
+  /* width: 100%; */
+  /* max-width: 33%; for images */
+  min-width: 48%; /* for video */
+  height: auto;
+  margin: 0 auto;
+}
+.col-lg-6.info-right img {
+  width: 100%;
+}
+
 /********** Classes Section ***********/
 /*
 .section-classes {
@@ -278,11 +328,10 @@ main {
 .card.card-classes .card-header h2 {
   color: #b03229;
   font-family: "Oswald", sans-serif;
-  font-weight: bold;
   text-align: center;
 }
 .card.card-classes .card-body.card-header {
-  height: 150px;
+  height: 305px;
 }
 .card.card-classes ul.list-group-flush .list-group-item {
   height: 73px;
@@ -385,7 +434,7 @@ main {
   padding: 80px 0 110px 0;
 }
 .feedback h2 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 .feedback p {
   font-size: 1.2rem;
@@ -569,7 +618,6 @@ hr.socket {
 }
 .carousel-h1 {
   font-size: 6.5rem;
-  font-weight: 600;
   font-family: oswald;
 }
 .section-header {
@@ -689,7 +737,7 @@ h2.contact-heading {
   }
   .carousel-item > img {
     /*width: 100%;*/
-    margin-top: 65px;
+    /* margin-top: 65px; */
     height: 100%;
   }
   .carousel-h1 {
@@ -699,7 +747,7 @@ h2.contact-heading {
     font-size: 1.5rem;
   }
   .map-wrapper {
-    margin: 20px 15%;
+    margin: 20px 0;
   }
   .back-to-top img {
     width: 100px;
@@ -724,6 +772,11 @@ h2.contact-heading {
   .carousel-h1 {
     font-size: 3.5rem;
   }
+  .section-video .col-12.info-video .grid-item {
+    max-width: 480px;
+    width: 480px;
+  }
+  
   .marketing .col-lg-4 {
     padding: 0 25%; /* Previous 0 20% */
   }
@@ -792,6 +845,9 @@ h2.contact-heading {
   .carousel-item > img.dragon-hero-img-bg {
     display: none;
   }
+  /* .section-info .col-12.info-video .grid-item {
+    max-width: 600px;
+  }   */
   .jumbotron-heading {
     font-size: 44px;
   }
@@ -805,7 +861,7 @@ h2.contact-heading {
 }
 @media (max-width: 451px) {
   .carousel-item > img {
-    margin-top: 70px;
+    /* margin-top: 70px; */
   }
   .carousel-caption {
     bottom: 21%;
@@ -824,9 +880,14 @@ h2.contact-heading {
   .brand-name h3 {
     font-size: 1.25rem;
   }
+  .section-video .col-12.info-video .grid-item {
+    max-width: 100%;
+    width: 90%;
+    min-width: 300px;
+}
   .offset::before {
-    height: 83px;
-    margin-top: -83px;
+    height: 65px;
+    margin-top: -65px;
     content: "";
     display: block;
   }
