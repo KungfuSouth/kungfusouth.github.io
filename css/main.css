@@ -638,6 +638,10 @@ h2.contact-heading {
 .lead {
   font-size: 1.3rem;
 }
+.lazy {
+  transition: ease 1.5s;
+  transform: translate(10px);
+}
 
 /******** Media queries **********/
 
@@ -653,13 +657,13 @@ h2.contact-heading {
   }
 
   .featurette-heading {
-    font-size: 50px;
+    font-size: 32px;
   }
 }
 
 @media (min-width: 62em) {
   .featurette-heading {
-    margin-top: 3rem;
+    margin-top: 0rem;
   }
 }
 
