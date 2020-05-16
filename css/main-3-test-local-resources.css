@@ -1,3 +1,22 @@
+/*--------------------------------------
+Changelog form index-2-test.html
+----------------------------------------
+
+body {
+  height:100%;
+}
+.carousel-item {
+  height: 100vh or 100%;
+  min-height: -webkit-fill-available;
+}
+2. Use local resources to load fonts, js, css & images.
+3. Remove unnecesary comments
+4. Remove unnecesary CSS
+
+
+-----------------------------------------*/
+
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 
@@ -12,6 +31,7 @@ body {
   background: #ffffff;
   padding-top: 0;
   font-size: 1.2rem;
+  height: 100%;
 }
 .center-align {
   margin: 0 auto;
