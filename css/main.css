@@ -38,9 +38,9 @@ body {
 /*  transition: transform 2s;
   transform: scale(1);*/
 } 
-iframe {
+/* iframe {
   width: 100% !important;
-}
+} */
 
 /*---- Lazy loading images ---*/
 .lazy {
@@ -62,8 +62,8 @@ iframe {
     width: 100%;
 }  */
 .b24-widget-button-position-bottom-right {
-  right: 10px;
-  bottom: 10px;
+  right: 10px !important;
+  bottom: 10px !important;
 }
 /* .bx-crm-widget-form-config-wrapper #bx24_form_inline_loader_container_2 iframe#bx_form_iframe_2 {
   height: 100vh !important;
@@ -803,6 +803,9 @@ h2.contact-heading {
   }
 }
 @media (max-width: 991px) {
+  html {
+    scroll-behavior: auto;
+  }
   /* .logo-brand img {
     width: 90px;
     height: 90px;
