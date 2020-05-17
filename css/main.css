@@ -33,14 +33,41 @@ body {
 .bg-black {
   background: #000; /*#0f0f0fde*/
 }
-/* .img-fluid {
-  transition: transform 2s;
-  transform: scale(1);
-} */
-.lazy {
-  transition: ease 1.5s;
-  transform: translate(10px);
+ .img-fluid {
+   width: 100%;
+/*  transition: transform 2s;
+  transform: scale(1);*/
+} 
+iframe {
+  width: 100% !important;
 }
+
+/*---- Lazy loading images ---*/
+.lazy {
+  width: 100%;
+  transform: scale(.9);
+  transition: transform 2s;
+  /* visibility: visible; */
+}
+/* .col-lg-6.info-right.image-container {
+    position: relative;
+    padding-bottom: 150%; *//* ratio of image height to width */
+    /* height: 0;
+    overflow: hidden;
+}  */
+/* .col-lg-6.info-right.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}  */
+.b24-widget-button-position-bottom-right {
+  right: 10px;
+  bottom: 10px;
+}
+/* .bx-crm-widget-form-config-wrapper #bx24_form_inline_loader_container_2 iframe#bx_form_iframe_2 {
+  height: 100vh !important;
+} */
 
 /**--------------
    *  Header

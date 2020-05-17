@@ -19,7 +19,7 @@
 
   <!-- Custom styles for this template -->
   <!-- <link href="css/carousel.css" rel="stylesheet" /> -->
-  <link href="css/main-2-test.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
   <!-- Google fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
   <!-- LazyLoad js -->
@@ -115,11 +115,11 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="mobile-hero-img first-slide" src="img/sifu-warren-hero-1.jpg" alt="First slide" />
-          <img class="tablet-hero-img first-slide" src="img/sifu-warren-hero-1.jpg" alt="First slide" />
-          <img class="dragon-hero-img-bg first-slide" src="img/dragon-bg-big-grey.jpeg" alt="First slide" />
-          <img class="main-hero-img first-slide" style="width: 50%;" src="img/sifu-warren-hero-1.jpg"
-            alt="First slide" />
+          <img class="lazy mobile-hero-img first-slide" data-src="img/sifu-warren-hero-1.jpg" alt="First slide" src="img/sifu-warren-hero-1-blur.jpg"/>
+          <img class="lazy tablet-hero-img first-slide" data-src="img/sifu-warren-hero-1.jpg" alt="First slide" src="img/sifu-warren-hero-1-blur.jpg"/>
+          <img class="lazy dragon-hero-img-bg first-slide" data-src="img/dragon-bg-big-grey.jpeg" alt="First slide" src="img/dragon-bg-big-grey-blur.jpeg"/>
+          <img class="lazy main-hero-img first-slide" style="width: 50%;" data-src="img/sifu-warren-hero-1.jpg"
+            alt="First slide" src="img/sifu-warren-hero-1-blur.jpg"/>
           <div class="container">
             <div class="carousel-caption text-left" style="background: #000000a3;">
               <h1 class="carousel-h1" style="background: maroon; display: inline-block; padding: 0 10px 10px;">
@@ -229,7 +229,7 @@
               </p>
             </div>
             <div class="col-md-5">
-              <img class="lazy featurette-image img-fluid mx-auto" data-src="img/sifu-warren-001.jpg"
+              <img class="lazy featurette-image img-fluid mx-auto" data-src="img/sifu-warren-001.jpg" src="img/sifu-warren-001-blur.jpg"
                 alt="Generic placeholder image" />
             </div>
           </div>
@@ -262,11 +262,11 @@
                 fighting is only one aspect of martial arts.
               </p>
             </div>
-            <div class="col-lg-6 info-right">
-              <img class="img-fluid lazy" data-src="img/man-standing-under-tree-3527074.jpg" alt="">
+            <div class="col-lg-6 info-right image-container">
+              <img class="img-fluid lazy" data-src="img/man-standing-under-tree-3527074.jpg" src="img/man-standing-under-tree-blur.jpg" alt="">
             </div>
             <div class="col-lg-6 info-left">
-              <img class="img-fluid lazy" data-src="img/ma1.png" alt="">
+              <img class="img-fluid lazy" data-src="img/ma1.png" src="img/ma1-compressor-blur.jpg" alt="">
               <h2 class="text-center">The truth about Martial Arts</h2>
               <p>In truth martial arts is more than simply a method of self-defence. It is a holistic philosophy of how
                 to live a productive and successful life. Martial arts mastery strives to find a balance between the the
@@ -288,7 +288,7 @@
                 West.
               </p>
               <br><br>
-              <img class="img-fluid lazy" data-src="img/2-people-doing-karate-during-sunset-62376.jpg" alt="">
+              <img class="img-fluid lazy" data-src="img/2-people-doing-karate-during-sunset-62376.jpg" src="img/2-people-doing-karate-during-sunset-blur.jpg" alt="">
               <h2 class="text-center">Why Learn Martial Arts?</h2>
               <p><br><br>
                 The benefits of learning martial arts are wide-ranging. Firstly lets look at the benefits of exercise.
@@ -324,7 +324,7 @@
                 various parts of Asia. Kungfu, traditionally called Shaolin Kungfu as well as Wingchun come from
                 Northern and Southern China respectfully, while Juijistu and Karate are Japanese and Muai Tai or
                 Kickboxing as many know it derives from Thailand.<br><br>
-                <img class="img-fluid lazy" data-src="img/men-fighting-in-the-ring-2581662.jpg" alt="">
+                <img class="img-fluid lazy" data-src="img/men-fighting-in-the-ring-2581662.jpg" src="img/men-fighting-in-the-ring-2581662-blur.jpg" alt="">
                 Each style of martial arts has its own philosophy, tradition and techniques specific to that style of
                 fighting. For instance, in kickboxing and karate fighters prefer maintaining a longer distance from one
                 another so that they can use their long legs for kicking with power. They need more space and time
@@ -332,7 +332,7 @@
                 close quarters. So, in order kicks to be effective fighters need more room and time to generate a
                 powerful kick.</p><br><br>
               <img class="img-fluid lazy"
-                data-src="img/woman-punching-the-hand-of-man-wearing-training-gloves-1544774.jpg" alt="">
+                data-src="img/woman-punching-the-hand-of-man-wearing-training-gloves-1544774.jpg" src="img/woman-punching-the-hand-of-man-wearing-training-gloves-blur.jpg" alt="">
               <p>Conversely, punching requires much less energy and can be thrown rapidly. This increase in speed means
                 that punches are less powerful than kicks, but because the arms and shorter, faster and more flexible
                 than the legs it also means that they are ideal for for close combat fighting.
@@ -350,7 +350,7 @@
                 disciplines.
               </p>
               <img class="img-fluid lazy"
-                data-src="img/self-defence-1.jpg" alt="">
+                data-src="img/self-defence-1.jpg" src="img/self-defence-1-blur.jpg" alt="">
                 <h2 class="text-center">Learn Self Defense Techniques</h2>
               <p>Anyone can learn the basics of kungfu, strengthen their bodies and learn how to defend themselves. Like any other skill all it takes is some dedication and practice. A good sensei will be able to teach highly effective self-defence tactics which may come in handy. Remember though that fighting in public shoud be a last resort and only when absolutely necessary.
               </p>
@@ -370,20 +370,20 @@
               <div class="grid-item">
                 <div class="grid-video youtube-responsive-container">
                   <iframe class="lazy" width="560" height="315" data-src="https://www.youtube.com/embed/cZHtZicfUq0"
-                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    frameborder="0" src="img/youtube-blur.jpg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
                 </div>
               </div>
               <div class="grid-item">
                 <div class="grid-video youtube-responsive-container">
                   <iframe class="lazy" width="560" height="315" data-src="https://www.youtube.com/embed/pWGUya2KeDM"
-                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    frameborder="0" src="img/youtube-blur.jpg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
                 </div>
               </div>
               <div class="grid-item">
                 <div class="grid-video youtube-responsive-container">
-                  <iframe class="lazy" width="560" height="315" data-src="https://www.youtube.com/embed/GFEn3NX2jRM"
+                  <iframe class="lazy" width="560" height="315" data-src="https://www.youtube.com/embed/GFEn3NX2jRM" src="img/youtube-blur.jpg"
                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
                 </div>
@@ -410,7 +410,7 @@
                 </p>
               </div>
               <div class="col-lg-6 info-right mt-5">
-                <img class="img-fluid lazy" data-src="img/silhouette-of-man-at-daytime-1051838.jpg" alt="">
+                <img class="img-fluid lazy" data-src="img/silhouette-of-man-at-daytime-1051838.jpg" src="img/silhouette-of-man-at-daytime-1051838-blur.jpg" alt="">
                 <h2 class="text-center center-align mt-5 mb-3">Join us today</h2>
                 <p>At Kaizen we help our students develop confidence and mastery
                   in kungfu skills. Whether a beginner, intermediate or
@@ -437,7 +437,7 @@
             <div class="row featurette">
               <div class="col-lg-4">
                 <div class="card card-classes">
-                  <img class="img-fluid lazy" data-src="img/kids-class-2.jpg" class="card-img-top"
+                  <img class="img-fluid lazy" data-src="img/kids-class-2.jpg" src="img/kids-class-2-blur.jpg" class="card-img-top"
                     alt="Learn self-defence techniques" />
                   <div class="card-header">
                     <h2>Kids Lessons</h2>
@@ -483,7 +483,7 @@
               </div>
               <div class="col-lg-4">
                 <div class="card card-classes">
-                  <img class="img-fluid lazy" data-src="img/adult-class-2.jpg" class="card-img-top"
+                  <img class="img-fluid lazy" data-src="img/adult-class-2.jpg" src="img/adult-class-2-blur.jpg" class="card-img-top"
                     alt="Martial Arts Fighters" />
                   <div class="card-header">
                     <h2>Adults & Teens</h2>
@@ -524,7 +524,7 @@
               </div>
               <div class="col-lg-4">
                 <div class="card card-classes">
-                  <img class="img-fluid lazy" data-src="img/advanced.jpg" class="card-img-top"
+                  <img class="img-fluid lazy" data-src="img/advanced.jpg" class="card-img-top" src="img/advanced-blur.jpg"
                     alt="Martial artist fighting  with weapons" />
                   <div class="card-header">
                     <h2>Advanced</h2>
@@ -778,7 +778,7 @@
             <div class="card text-center">
               <div class="map-wrapper overlay">
                 <iframe class="lazy"
-                  data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3576.6172286673363!2d28.00886031503208!3d-26.30650598339234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95060ee8ee886b%3A0xdf35900b9fa526a5!2sKlipriviersberg%20Recreation%20Centre!5e0!3m2!1sen!2sza!4v1579706728666!5m2!1sen!2sza"
+                  data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3576.6172286673363!2d28.00886031503208!3d-26.30650598339234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95060ee8ee886b%3A0xdf35900b9fa526a5!2sKlipriviersberg%20Recreation%20Centre!5e0!3m2!1sen!2sza!4v1579706728666!5m2!1sen!2sza" src="img/gmaps-blur.jpg"
                   width="761" height="602" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
               </div>
               <!--
@@ -907,9 +907,18 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"
     defer></script>
-  <!-- Start Whatsapp Chat bubble -->
+  <!-- START Whatsapp Chat bubble -->
+  <!-- Bitrix24.com Chat bubble -->
+  <script>
+    (function(w,d,u){
+            var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
+            var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+    })(window,document,'https://cdn.bitrix24.com/b13960061/crm/site_button/loader_4_rqsudh.js');
+</script>
+  <!-- END Bitrix24.com Chat bubble -->
+  <!-- Elfsite Chat bubble 
   <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-  <div class="elfsight-app-5bcd8ded-218e-40aa-a3c3-ba246492b7ee"></div>
+  <div class="elfsight-app-5bcd8ded-218e-40aa-a3c3-ba246492b7ee"></div>-->
   <!-- End Whatsapp Chat bubble -->
 
   <script>

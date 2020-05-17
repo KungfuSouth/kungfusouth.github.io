@@ -41,6 +41,10 @@ body {
   transition: ease 1.5s;
   transform: translate(10px);
 }
+.b24-widget-button-position-bottom-right {
+  right: 10px !important;
+  bottom: 10px !important;
+}
 
 /**--------------
    *  Header
