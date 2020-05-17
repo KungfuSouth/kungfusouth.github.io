@@ -40,7 +40,7 @@ body {
 } 
 .lazy {
 /*   transition: ease 1.5s; */
-  transform: transition 1.5s;
+/*   transform: transition 1.5s; */
 }
 .b24-widget-button-position-bottom-right {
   right: 10px !important;
